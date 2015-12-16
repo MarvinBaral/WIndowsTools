@@ -2,11 +2,14 @@
 #include "includes/kill.au3"
 
 $nameProcess = "GWX.exe"
-$nameWindowProcess = "GWXE.exe"
+$nameWindowProcess = "GWXUX.exe"
+$kills = 0
 
-$success1 = _WaitToKill($nameProcess, 10)
-$success2 = _WaitToKill($nameWindowProcess, 1)
+Local $success[2]
 
-If Not ($success1 Or $success2) Then
-   MsgBox(0, "Timeout", '"' & @scriptname & """ timeouted without killing something.")
-EndIf
+$continue = True
+While $continue
+   $success[0] = _Kill($nameProcess, False)
+   $success[1] = _Kill($nameWindowProcess, False)
+   sleep(10000) ;we do not want to use significant CPU-time
+WEnd

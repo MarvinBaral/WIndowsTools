@@ -9,19 +9,19 @@
 #ce ----------------------------------------------------------------------------
 #include <Date.au3>
 
-Func _Kill($processName)
+Func _Kill($processName, $showMsgBox = True, $delay = 5000)
    If ProcessExists($processName) Then
 	  ProcessClose($processName)
-	  sleep(3000) ;Wait for process to die and then check whether he still lives
+	  sleep($delay) ;Wait for process to die and then check whether he still lives
 	  If Not ProcessExists($processName) Then
-		 MsgBox(0, "Success", $processName&" was succesfully closed.")
+		 If $showMsgBox Then MsgBox(0, "Success", $processName&" was succesfully closed.")EndIf
 		 Return True
 	  Else
-		 MsgBox(0+16, "Fail", $processName&" wasn't closed.")
+		 If $showMsgBox Then MsgBox(0+16, "Fail", $processName&" wasn't closed.")EndIf
 		 Return False
 	  EndIf
    Else
-	  MsgBox(0+16, "Fail", $processName&" doesn't exist.")
+	  If $showMsgBox Then MsgBox(0+16, "Fail", $processName&" doesn't exist.")EndIf
 	  Return False
    EndIf
 EndFunc
