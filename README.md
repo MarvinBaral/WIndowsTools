@@ -2,7 +2,7 @@
 Author: Marvin Baral (marvinbaral1997@gmail.com)
 
 Two AutoIt Scripts which are very usefull for windows-systems, especially win8 and win 8.1: 
-one to kill the process which annoys you to get Windows10, which shall be linked to your Startup-Folder; Another one to kill the PDF-"Reader"-App in win8 + 8.1, which is necessary when removing your USB-Stick safely aufter you opened a pdf-file on the Stick with the Reader
+one to kill the process which annoys you to get Windows10, which shall be linked to your Startup-Folder; Another one to kill the PDF-"Reader"-App in win8 + 8.1, which is necessary when removing your USB-Stick safely after you opened a pdf-file on the Stick with the Reader
 
 For the Windows-killer tool, there are two versions:
 one which only checks the first 11 minutes after Startup 
