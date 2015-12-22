@@ -22,6 +22,5 @@ While $continue
 
    sleep(10000) ;we do not want to use significant CPU-time
 WEnd
-TraySetState(
 
 ;https://www.autoitscript.com/forum/topic/67132-change-the-text-on-tray-icon/
