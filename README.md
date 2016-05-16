@@ -11,5 +11,5 @@ and another, which runs whenever your PC is on and checks or kills each 10 secon
 If the compiled files don't work, mostly your Antivirus is blocking them.
 If you download AutoIt you can execute the uncompiled scripts and modify them.
 
-This program isn't the perfect solution to the annoying Win10-App. The proper and clean solution would be to uninstall thw Windows Update KB3035583 (!!! there are two releases of this Update !!!). After I uninstalled this Update, my script had nothing to do. The hover-text always showed "... killed GWX.exe 0 times".
+This program isn't the perfect solution to the annoying Win10-App. The proper and clean solution would be to uninstall the Windows Update KB3035583. After I uninstalled this Update, my script had nothing to do. The hover-text always showed "... killed GWX.exe 0 times". Thats why I removed it from my laptop.
 GWX = Get Windows 10
